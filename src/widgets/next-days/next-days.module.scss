@@ -1,0 +1,28 @@
+@import 'styles/main.scss';
+
+.NextDays {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+
+    &__title {
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    @media($media-phone-medium) {
+        &__items {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

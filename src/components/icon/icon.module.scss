@@ -1,0 +1,21 @@
+.Icon {
+    &--primary {
+        fill: #ffffff;
+    }
+    &--yellow {
+        fill: #ffeb3b;
+    }
+    &--grey {
+        fill: #77838b;
+    }
+    &--greyDark {
+        fill: #293553;
+    }
+    &--greyLight {
+        fill: #adb8c0;
+    }
+    &--size {
+        height: inherit;
+        width: inherit;
+    }
+}

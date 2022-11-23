@@ -1,0 +1,11 @@
+@import 'styles/main.scss';
+
+.TodayWeather {
+    display: flex;
+    flex: 1 1 auto;
+
+    @media($media-phone) {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+}

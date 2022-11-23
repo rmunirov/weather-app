@@ -1,0 +1,19 @@
+.State {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+
+    &__value {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-align: center;
+        opacity: 50%;
+    }
+}

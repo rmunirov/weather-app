@@ -1,0 +1,108 @@
+@import 'styles/main.scss';
+
+$padding: 10px;
+
+.CurrentTemperature {
+    position: relative;
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &::after {
+        content: '';
+        position: relative;
+        top: 0;
+        left: 10px;
+        height: 100%;
+        width: 2px;
+        background-color: #FFF;
+        opacity: 50%;
+    }
+
+    &__picture {
+        // display: flex;
+        padding: $padding;
+        width: 150px;
+        height: 150px;
+        justify-content: center;
+    }
+
+    &__temperature {
+        display: flex;
+        flex-direction: column;
+        padding: $padding;
+
+        &__value {
+            padding-bottom: $padding;
+            span {
+                font-size: 6rem;
+                font-weight: 300;
+            }
+        }
+
+        &__state {
+            height: 2rem;
+            span {
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+    }
+
+    @media ($media-phone) {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: #FFF;
+            opacity: 50%;
+        }
+
+        &__picture {
+            width: 200px;
+            height: 200px;
+        }
+
+        &__temperature {
+            &__value {
+                span {
+                    font-size: 7rem;
+                }
+            }
+
+            &__state {
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    @media ($media-phone-medium) {
+        &__picture {
+            width: 150px;
+            height: 150px;
+        }
+
+        &__temperature {
+            &__value {
+                span {
+                    font-size: 6rem;
+                }
+            }
+
+            &__state {
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

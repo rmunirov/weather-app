@@ -1,0 +1,39 @@
+@mixin container {
+    max-width: 770px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.Layout {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+    &__header {
+        &__container {
+            @include container();
+            display: flex;
+            min-height: 50px;
+            align-items: center;
+            justify-content: end;
+        }
+    }
+    
+    &__main {
+        flex: 1 1 auto;
+        &__container {
+            @include container();
+            display: flex;
+        }
+    }
+    
+    &__footer {
+        &__container {
+            @include container();
+            display: flex;
+            // min-height: 50px;
+            align-items: center;
+        }
+    }
+}

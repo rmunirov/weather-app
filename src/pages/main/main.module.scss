@@ -1,0 +1,31 @@
+@import 'styles/main.scss';
+
+.MainPage {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__location-and-date {
+        display: flex;
+    }
+    
+    &__today-weather {
+        display: flex;
+    }
+
+    &__weather-by-hour {
+        display: flex;
+    }
+
+    &__next-days {
+        display: flex;
+    }
+
+    @media ($media-phone) {
+        &__weather-by-hour {
+            display: none;
+        }
+    }
+}

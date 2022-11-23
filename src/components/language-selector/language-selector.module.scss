@@ -1,0 +1,42 @@
+.LanguageSelector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__flag {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+
+        &--isRussian {
+            justify-content: start;
+        }
+
+        &--isEnglish {
+            justify-content: end;
+        }
+
+        &__thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: white;
+            transition: background-color 0.3s ease 0s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #d7f4ff;
+            }
+        }
+    }
+}
